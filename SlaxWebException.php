@@ -4,6 +4,13 @@ namespace SlaxWeb\Exception;
 class SlaxWebException extends \Exception
 {
 	/**
+	 * Exception
+	 * 
+	 * @var object
+	 */
+	protected $_exception = null;
+
+	/**
 	 * Default constructor
 	 *
 	 * Interpolate the message and context, and send it to the 
@@ -21,7 +28,12 @@ class SlaxWebException extends \Exception
 		Exception $previous = null
 	) {
 		$message = $this->_interpolate($message, $context);
-		parent::__construct($message, $code, $previous);
+		$this->_exception = parent::__construct($message, $code, $previous);
+	}
+
+	public function getBaseException()
+	{
+		return $this->_exception;
 	}
 
 	/**
