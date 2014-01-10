@@ -1,7 +1,7 @@
 <?php
 namespace SlaxWeb\Exception;
 
-class SlaxWebException extends Exception
+class SlaxWebException extends \Exception
 {
 	/**
 	 * Default constructor
