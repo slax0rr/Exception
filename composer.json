@@ -2,6 +2,7 @@
     "name": "slaxweb/exception",
     "description": "SlaxWeb Exception library",
     "license": "GPLv3",
+    "version": "0.1.0",
     "authors": [
         {
             "name": "Tomaz Lovrec",
@@ -15,11 +16,6 @@
 	"autoload":	{
 		"psr-0": {
 			"SlaxWeb\\Exception": ""
-		}
-	},
-	"extra":	{
-		"branch-alias": {
-			"dev-master": "0.1-dev"
 		}
 	},
     "target-dir": "SlaxWeb/Exception"
